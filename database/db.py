@@ -4,7 +4,7 @@ db_host = 'instance-proyect-mintic.cdyc0ucs6ghp.us-east-1.rds.amazonaws.com'
 db_user = 'felaponte'
 db_password = 'pandora0706'
 db_database = 'db_proy'
-db_table = 'users'
+db_table = 'pets'
 
 def connectionSQL():
     try:

@@ -19,4 +19,5 @@ def func_register_user():
     animal = request.form["animal"]
     breed = request.form["breed"]
     print(id, name, ownername, ownerlastname, birthday, animal, breed)
+    resultado = add_user(id, name, ownername, ownerlastname, birthday, animal, breed)
     return "ok"
