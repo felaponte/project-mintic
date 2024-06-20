@@ -19,5 +19,27 @@ def func_register_user():
     animal = request.form["animal"]
     breed = request.form["breed"]
     print(id, name, ownername, ownerlastname, birthday, animal, breed)
-    resultado = add_user(id, name, ownername, ownerlastname, birthday, animal, breed)
-    return "ok"
+    confirm_user = add_user(id, name, ownername, ownerlastname, birthday, animal, breed)
+    if confirm_user:
+        return "<h1>the user was succesfully created</h1>"
+    else:
+        return "<h1>Error: the user was not created</h1>"
+        
+def func_consult_user():
+    obj_user = request.get_json()
+    id = obj_user["id"]
+    passw = obj_user["passw"] #es solo para una prueba
+    result_data = consult_user(id)
+    response = ""
+    print(result_data[0][1])
+    if result_data != False and len(result_data) != 0:
+        response = {
+            'status' : "ok",
+            'name' : result_data[0][1]
+        }
+        print("hola")
+    else:
+        response = {
+            'status' : "error"
+        }
+    return response

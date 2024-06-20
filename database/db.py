@@ -31,7 +31,20 @@ def add_user(id, name, ownername, ownerlastname, birthday, animal, breed):
            cursor.execute(instruction_sql)
            connection_sql.commit()
            print("user added")
+           return True
         else:
             print('Error connecting to database')
     except:
         print("error creting user")
+
+def consult_user(id):
+    instruction_sql= "SELECT * FROM pets WHERE id = "+ id
+    connection_sql = connectionSQL()
+    try:
+        cursor = connection_sql.cursor()
+        cursor.execute(instruction_sql)
+        result_data = cursor.fetchall()
+        return(result_data)
+    except Exception as err:
+        print("Error", err)
+        return False

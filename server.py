@@ -10,6 +10,6 @@ from routes.route import *
   #  return "ok"
     
 if __name__ == "__main__":
-    host = "127.0.0.1"
-    port = "8080"
+    host = "0.0.0.0"
+    port = "80"
     app.run(host, port)
