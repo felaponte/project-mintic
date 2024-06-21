@@ -37,7 +37,6 @@ def func_consult_user():
             'status' : "ok",
             'name' : result_data[0][1]
         }
-        print("hola")
     else:
         response = {
             'status' : "error"
