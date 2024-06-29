@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Register Page</title>
+        <link rel="stylesheet" href="../static/css/style_register.css" type="text/css" />
+        <script type="text/javascript" src="../static/js/appregister.js"></script>
+    </head>
+    <body>
+        <h1>Register Users</h1>
+        <form action="/register_user" method="post" enctype="multipart/form-data"> 
+            <label>Identification</label> <input type="number" name="id"/>
+            <br /><br /> 
+            <label>Pet Name</label> <input type="text" name="name" />
+            <br /><br /> 
+            <label>Owner Name</label> <input type="Text" name="ownername"/>
+            <br /><br /> 
+            <label>Owner Last Name</label> <input type="Text" name="ownerlastname"/>
+            <br /><br /> 
+            <label>birthday</label> <input type="date" name="birthday"/>
+            <br /><br /> 
+            <label>Animal</label> <input type="text" name="animal"/>
+            <br /><br /> 
+            <label>Breed</label> <input type="text" name="breed"/>
+            <br /><br /> 
+            <input type="file" name="photo"/>
+            <br> <br> 
+            <button onclick="registeruser()">Register</button>
+        </form>
+    </body>
+</html>

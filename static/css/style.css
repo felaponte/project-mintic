@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    background-image: url('https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2022/05/cats-party-0516221.jpg');
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover; /* Ensure the background covers the whole viewport */
+    margin: 0; 
+    height: 100vh; 
+    width: 100vw;
+    background-color: black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text within the body */
+}
+
+/* Style the main heading */
+h1 {
+    font-size: 70px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Style the subheading */
+h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Style images */
+img {
+    height: 500px;
+}
+
+/* Style each button-wrapper to align images and buttons */
+.button-wrapper {
+    display: inline-block; /* Display wrappers inline-block for horizontal alignment */
+    text-align: center; /* Center the content within each wrapper */
+    margin: 20px;
+    vertical-align: top; /* Align top for consistent positioning */
+}
+
+/* Style the images */
+.button-image {
+    max-width: 100px; /* Set max-width for the images */
+    height: auto;
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto 10px; /* Center the image and add space below it */
+}
+
+/* Style the buttons */
+.btn {
+   font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px; /* Add space between buttons */
+    cursor: pointer;
+    display: inline-block; /* Ensure buttons are inline-block */
+}
+
+/* Optional: Add hover effect to buttons */
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Center content within div elements */
+div {
+    text-align: center;
+}
+.register-consult-buttons {
+    display: inline-block; /* Ensure the container's children are inline-block */
+}
