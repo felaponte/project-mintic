@@ -21,7 +21,7 @@ def connectionSQL():
         return None 
 
 def add_user(id, name, ownername, ownerlastname, birthday, animal, breed):
-    instruction_sql =  "INSERT INTO " + db_table + \
+    instruction_sql = "INSERT INTO " + db_table + \
     " (id, name, ownername, ownerlastname, birthday, animal, breed) Values ("\
     +id+", '"+name+"', '"+ownername+"', '"+ownerlastname+"', '"+birthday+"', '"+animal+"', '"+breed+"')" 
     connection_sql = connectionSQL()
@@ -35,7 +35,7 @@ def add_user(id, name, ownername, ownerlastname, birthday, animal, breed):
         else:
             print('Error connecting to database')
     except:
-        print("error creting user")
+        print("error creating user")
 
 def consult_user(id):
     instruction_sql= "SELECT * FROM pets WHERE id = "+ id

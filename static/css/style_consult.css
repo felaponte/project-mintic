@@ -32,3 +32,10 @@ div{
     margin: 20px;
     display: inline-block
 }
+img {
+    height: 120px
+}
+textarea{
+    height: 180px;
+    width: 300px
+}

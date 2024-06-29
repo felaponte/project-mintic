@@ -19,5 +19,4 @@ def register_user():
     
 @app.route("/consult_user", methods=["post"])    
 def consult_user():
-    print("ok")
     return func_consult_user()
